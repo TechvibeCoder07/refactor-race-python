@@ -1,6 +1,6 @@
 # test_legacy_checkout.py
 
-from legacy_checkout import process_order
+from src.legacy_checkout import process_order
 
 
 def test_regular_customer():
