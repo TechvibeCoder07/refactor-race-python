@@ -1,0 +1,60 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\farm nft\Documents\Codex\2026-10-10\pre\work\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\FARMNF~1\AppData\Local\Temp\Rar$DRa23540.28069\refactor-race-python
+plugins: cov-7.1.0
+collecting ... collected 4 items
+
+tests/test_checkout.py::test_regular_customer PASSED                     [ 25%]
+tests/test_checkout.py::test_vip_customer PASSED                         [ 50%]
+tests/test_checkout.py::test_coupon FAILED                               [ 75%]
+tests/test_checkout.py::test_duplicate_products PASSED                   [100%]
+
+================================== FAILURES ===================================
+_________________________________ test_coupon _________________________________
+
+    def test_coupon():
+        customer = {
+            "name": "Maria",
+            "type": "regular"
+        }
+    
+        items = [
+            {
+                "name": "Teclado",
+                "price": 200,
+                "qty": 2,
+                "weight": 1
+            }
+        ]
+    
+        result = process_order(
+            customer,
+            items,
+            coupon="PROMO10",
+            state="MG"
+        )
+    
+>       assert result["discount"] == 40
+E       assert 0 == 40
+
+C:\Users\farm nft\AppData\Local\Temp\Rar$DRa23540.28069\refactor-race-python\tests\test_checkout.py:81: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Pedido processado para Maria
+Subtotal: 400
+Desconto: 0
+Frete: 20.8
+Imposto: 25.200000000000003
+TOTAL: 406.0
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.10.11-final-0 _______________
+
+Name                     Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------
+src\legacy_checkout.py      88     12     50     10    81%   8->7, 21, 24, 26->30, 38, 41, 44, 65, 68, 78-83
+--------------------------------------------------------------------
+TOTAL                       88     12     50     10    81%
+Coverage JSON written to file C:\Users\farm nft\Documents\Codex\2026-10-10\pre\work\antes\coverage.json
+=========================== short test summary info ===========================
+FAILED tests/test_checkout.py::test_coupon - assert 0 == 40
+========================= 1 failed, 3 passed in 0.17s =========================

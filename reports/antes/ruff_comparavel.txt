@@ -1,0 +1,5 @@
+3	SIM102 	[ ] collapsible-if
+3	SIM108 	[ ] if-else-block-instead-of-if-exp
+1	PLR1730	[*] if-stmt-min-max
+Found 7 errors.
+[*] 1 fixable with `--fix` (5 unsafe fixes available with `--fix --unsafe-fixes`).

@@ -1,0 +1,64 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\farm nft\Documents\Codex\2026-10-10\pre\outputs\refactor-race-python\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\farm nft\Documents\Codex\2026-10-10\pre\outputs\refactor-race-python
+configfile: pytest.ini
+testpaths: tests
+plugins: cov-7.1.0
+collecting ... collected 44 items
+
+tests/test_checkout.py::test_regular_customer PASSED                     [  2%]
+tests/test_checkout.py::test_vip_customer PASSED                         [  4%]
+tests/test_checkout.py::test_coupon PASSED                               [  6%]
+tests/test_checkout.py::test_duplicate_products PASSED                   [  9%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-799--0-854.93-85] PASSED [ 11%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-800--40-813.2-81] PASSED [ 13%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[vip-999--99.9-962.04-192] PASSED [ 15%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[vip-1000--150-909.5-181] PASSED [ 18%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[employee-100--20-105.6-10] PASSED [ 20%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[unknown-100--0-127-12] PASSED [ 22%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-400-PROMO10-40-405.2-40] PASSED [ 25%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-499-PROMO20-0-553.93-55] PASSED [ 27%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-500-PROMO20-100-428-42] PASSED [ 29%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[employee-500-PROMO10-125-401.25-40] PASSED [ 31%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[vip-1200-PROMO20-300-963-192] PASSED [ 34%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[vip-100-VIP50-25-100.25-20] PASSED [ 36%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[vip-400-VIP50-90-351.7-70] PASSED [ 38%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-400-VIP50-0-448-44] PASSED [ 40%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-400-promo10-0-448-44] PASSED [ 43%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-400-INVALID-0-448-44] PASSED [ 45%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[vip-0-VIP50-0-20-4] PASSED [ 47%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[vip-1000-PROMO10-250-802.5-160] PASSED [ 50%]
+tests/test_checkout_rules.py::test_customer_and_coupon_rules[regular-800-PROMO20-200-642-64] PASSED [ 52%]
+tests/test_checkout_rules.py::test_shipping_and_tax_by_state[MG-20.8-7-127.8] PASSED [ 54%]
+tests/test_checkout_rules.py::test_shipping_and_tax_by_state[SP-20.8-9-129.8] PASSED [ 56%]
+tests/test_checkout_rules.py::test_shipping_and_tax_by_state[RJ-20.8-8-128.8] PASSED [ 59%]
+tests/test_checkout_rules.py::test_shipping_and_tax_by_state[ES-20.8-7-127.8] PASSED [ 61%]
+tests/test_checkout_rules.py::test_shipping_and_tax_by_state[BA-36.2-12-148.2] PASSED [ 63%]
+tests/test_checkout_rules.py::test_express_shipping_is_charged[MG-500-37.44-35-572.44-57] PASSED [ 65%]
+tests/test_checkout_rules.py::test_express_shipping_is_charged[BA-100-65.16-12-177.16-17] PASSED [ 68%]
+tests/test_checkout_rules.py::test_duplicate_names_keep_first_occurrence_order[names0-expected0] PASSED [ 70%]
+tests/test_checkout_rules.py::test_duplicate_names_keep_first_occurrence_order[names1-expected1] PASSED [ 72%]
+tests/test_checkout_rules.py::test_duplicate_names_keep_first_occurrence_order[names2-expected2] PASSED [ 75%]
+tests/test_checkout_rules.py::test_duplicate_names_keep_first_occurrence_order[names3-expected3] PASSED [ 77%]
+tests/test_checkout_rules.py::test_duplicate_names_keep_first_occurrence_order[names4-expected4] PASSED [ 79%]
+tests/test_checkout_rules.py::test_empty_order_preserves_legacy_shipping PASSED [ 81%]
+tests/test_checkout_rules.py::test_nonpositive_quantities_preserve_legacy_behavior PASSED [ 84%]
+tests/test_checkout_rules.py::test_points_use_total_before_rounding PASSED [ 86%]
+tests/test_checkout_rules.py::test_fractional_subtotal_without_coupon_keeps_console_discount PASSED [ 88%]
+tests/test_checkout_rules.py::test_pure_calculation_does_not_mutate_inputs_or_history PASSED [ 90%]
+tests/test_checkout_rules.py::test_process_order_preserves_history_and_console_output PASSED [ 93%]
+tests/test_checkout_rules.py::test_existing_discounted_value_helper_remains_compatible[0-400-PROMO10-regular-360] PASSED [ 95%]
+tests/test_checkout_rules.py::test_existing_discounted_value_helper_remains_compatible[100-500-PROMO20-employee-375] PASSED [ 97%]
+tests/test_checkout_rules.py::test_existing_discounted_value_helper_remains_compatible[10-100-VIP50-vip-75] PASSED [100%]
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.10.11-final-0 _______________
+
+Name                     Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------
+src\legacy_checkout.py      92      0     18      0   100%
+--------------------------------------------------------------------
+TOTAL                       92      0     18      0   100%
+Coverage JSON written to file C:\Users\farm nft\Documents\Codex\2026-10-10\pre\work\depois\coverage.json
+============================= 44 passed in 0.20s ==============================

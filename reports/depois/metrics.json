@@ -1,0 +1,20 @@
+{
+  "complexity": {
+    "calc_subtotal": 3,
+    "calc_desconto": 6,
+    "calc_desconto_total": 6,
+    "calc_valor_com_desconto": 1,
+    "calc_peso_total": 2,
+    "calc_frete": 5,
+    "calc_imposto": 1,
+    "calc_pontos": 2,
+    "busca_duplicados": 4,
+    "_calcula_valores": 1,
+    "_formata_resultado": 2,
+    "calcula_pedido": 1,
+    "_imprime_resumo": 1,
+    "process_order": 1
+  },
+  "average_complexity": 2.5714285714285716,
+  "maintainability_index": 31.971498936331997
+}

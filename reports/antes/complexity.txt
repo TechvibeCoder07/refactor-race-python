@@ -1,0 +1,13 @@
+src/legacy_checkout.py
+    F 33:0 calc_valor_com_desconto - B (7)
+    F 14:0 calc_desconto - B (6)
+    F 99:0 busca_duplicados - B (6)
+    F 58:0 calc_frete - A (5)
+    F 73:0 calc_imposto - A (5)
+    F 4:0 calc_subtotal - A (3)
+    F 49:0 calc_peso_total - A (2)
+    F 88:0 calc_pontos - A (2)
+    F 112:0 process_order - A (1)
+
+9 blocks (classes, functions, methods) analyzed.
+Average complexity: A (4.111111111111111)
