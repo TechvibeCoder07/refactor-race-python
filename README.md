@@ -1,4 +1,4 @@
-# Grupo:Ana Carolina Ramos, Anna Carolina Souza,Breno Henrique Barcelos, Caio Leonardo, Cauã Monteiro
+# Grupo:Ana Carolina Ramos, Anna Carolina Souza,Breno Henrique Barcelos, Caio Leonardo, Cauã Monteiro, João Pedro Penha Lourenço
 # Refactor Race Python
 
 Processamento de pedidos com descontos por cliente e cupom, frete, impostos,
